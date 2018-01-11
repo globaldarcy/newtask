@@ -1,0 +1,16 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #sidenav mode="push">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+  <div class="site">
+    <header>
+      <app-header (toggle)="sidenav.toggle()"></app-header>
+    </header>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+    <footer>
+      <app-footer></app-footer>
+    </footer>
+  </div>
+</mat-drawer-container>
