@@ -8,8 +8,10 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   @Output() toggle = new EventEmitter<void>();
+  @Output() toggleDarkTheme = new EventEmitter<boolean>();
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
@@ -18,4 +20,7 @@ export class HeaderComponent implements OnInit {
     this.toggle.emit();
   }
 
+  onChange(checked: boolean) {
+    this.toggleDarkTheme.emit(checked);
+  }
 }
