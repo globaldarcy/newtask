@@ -4,6 +4,7 @@ import { MatSidenavModule } from '@angular/material';
 import { CoreModule } from './core/core.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing-module';
+import { ProjectModule } from "./project/project.module";
 
 
 
@@ -13,7 +14,8 @@ import { AppRoutingModule } from './app-routing-module';
     BrowserModule,
     MatSidenavModule,
     CoreModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ProjectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

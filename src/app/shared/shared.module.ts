@@ -9,6 +9,8 @@ import {
   MatListModule,
   MatFormFieldModule,
   MatSlideToggleModule,
+  MatGridListModule,
+  MatDialogModule
 } from '@angular/material';
 
 @NgModule({
@@ -22,6 +24,8 @@ import {
     MatListModule,
     MatFormFieldModule,
     MatSlideToggleModule,
+    MatGridListModule,
+    MatDialogModule
   ],
   exports: [
     CommonModule,
@@ -33,6 +37,8 @@ import {
     MatListModule,
     MatFormFieldModule,
     MatSlideToggleModule,
+    MatGridListModule,
+    MatDialogModule
   ],
   declarations: []
 })
