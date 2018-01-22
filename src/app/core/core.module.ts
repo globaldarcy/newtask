@@ -9,13 +9,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { loadSvgResources } from '../utils/svg.util';
 import { LoginModule } from "../login/login.module";
+import 'hammerjs';
+import { AppRoutingModule } from "../app-routing-module";
 
 @NgModule({
   imports: [
     HttpClientModule,
     SharedModule,
+    LoginModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
-    LoginModule
   ],
   declarations: [
     HeaderComponent,
@@ -25,7 +28,8 @@ import { LoginModule } from "../login/login.module";
   exports: [
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    AppRoutingModule,
   ]
 })
 export class CoreModule {

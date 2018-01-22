@@ -1,7 +1,7 @@
 <!--<mat-drawer-container [class.myapp-dark-theme]="darkTheme" autosize>-->
 <mat-drawer-container [ngClass]="{'myapp-dark-theme': darkTheme}" autosize>
   <mat-drawer #sidenav mode="over">
-    <app-sidebar></app-sidebar>
+    <app-sidebar (navCLick)="sidenav.toggle()"></app-sidebar>
   </mat-drawer>
   <div class="site">
     <header>
@@ -9,6 +9,7 @@
     </header>
     <main>
       <router-outlet></router-outlet>
+      <!--<div class="square" [@square]="squareState" (click)="onClick()"></div>-->
     </main>
     <footer>
       <app-footer></app-footer>
